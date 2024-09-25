@@ -134,7 +134,7 @@ export default function Game() {
                 rePlay={rePlay}
               />
               <Overlay title={winner} function={rePlay} />
-              <Fireworks />
+             
             </>
           )}
         </>
