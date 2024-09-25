@@ -1,0 +1,9 @@
+button:disabled,
+button:disabled:hover {
+  opacity: 0.5;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  cursor: not-allowed;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
