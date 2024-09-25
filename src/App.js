@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Game from "./Components/Lists/Lists";
 import Loading from "./Components/Loading/Loading";
 import "./App.css";
-import Fireworks from "./Components/Fireworks/Fireworks";
 
 export default function App() {
   const [load, SetLoad] = useState(true);

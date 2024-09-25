@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./Lists.css";
 import Gm from "../Game/Game";
 import Overlay from "../Overlay/Overlay";
-import Fireworks from "../Fireworks/Fireworks";
 export default function Game() {
   const [clicked, setClicked] = useState({
     0: false,
@@ -134,7 +133,6 @@ export default function Game() {
                 rePlay={rePlay}
               />
               <Overlay title={winner} function={rePlay} />
-             
             </>
           )}
         </>
