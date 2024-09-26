@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./Lists.css";
 import Gm from "../Game/Game";
 import Overlay from "../Overlay/Overlay";
+import Confetti from "../Confetti/Confetti";
 export default function Game() {
   const [clicked, setClicked] = useState({
     0: false,
@@ -133,6 +134,7 @@ export default function Game() {
                 rePlay={rePlay}
               />
               <Overlay title={winner} function={rePlay} />
+              <Confetti />
             </>
           )}
         </>
@@ -143,7 +145,7 @@ export default function Game() {
             handleClickDiv={handleClickDiv}
             rePlay={rePlay}
           />
-          <Overlay title={"Game Over"} function={gameOver} />
+          <Overlay title={"Game Over"} function={gameOver} class={'bg-[#000000be]'}/>
         </>
       )}
     </>

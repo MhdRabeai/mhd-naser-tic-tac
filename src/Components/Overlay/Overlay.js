@@ -1,7 +1,6 @@
-
 export default function Overlay(props) {
   return (
-    <div className="end flex justify-center items-center flex-col bg-[#000000be] text-white w-full	h-full	absolute left-0	top-0	">
+    <div className={`end flex justify-center items-center flex-col text-white w-full	h-full	absolute left-0	top-0	z-50 ${props.class}`}>
       <h1 className="text-5xl	">{props.title}</h1>
       <div className="game-screen__bottom-panel mt-10  w-full max-w-xs  h-24 text-center">
         <button

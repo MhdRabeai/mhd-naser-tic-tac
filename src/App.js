@@ -8,10 +8,10 @@ export default function App() {
   useEffect(() => {
     setTimeout(() => {
       SetLoad(false);
-    }, 1500);
+    }, 2000);
   }, []);
   return (
-    <div className="App min-h-screen reta ">
+    <div className="App min-h-screen  ">
     {load ? <Loading /> : <Game />}
     </div>
   );

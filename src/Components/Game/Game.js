@@ -10,25 +10,23 @@ export default function Gm(props) {
         </h1>
       </div>
       <div className="game-screen__grid flex flex-col h-full justify-center content-center max-w-xs">
-        <div className="self-center ">
-          <div className="text-3xl max-w-xs">
-            <div className="flex -mb-2 gap-2">
+         <div className="text-3xl max-w-xs">
+            <div className="flex gap-4">
               <Box handleClickDiv={props.handleClickDiv} id={0} />
               <Box handleClickDiv={props.handleClickDiv} id={1} />
               <Box handleClickDiv={props.handleClickDiv} id={2} />
             </div>
-            <div className="flex -mb-2 gap-2">
+            <div className="flex gap-4">
               <Box handleClickDiv={props.handleClickDiv} id={3} />
               <Box handleClickDiv={props.handleClickDiv} id={4} />
               <Box handleClickDiv={props.handleClickDiv} id={5} />
             </div>
-            <div className="flex -mb-2 gap-2">
+            <div className="flex gap-4">
               <Box handleClickDiv={props.handleClickDiv} id={6} />
               <Box handleClickDiv={props.handleClickDiv} id={7} />
               <Box handleClickDiv={props.handleClickDiv} id={8} />
             </div>
           </div>
-        </div>
       </div>
       <div className="game-screen__bottom-panel flex justify-center flex-row w-full max-w-xs gap-3 h-24">
         <button

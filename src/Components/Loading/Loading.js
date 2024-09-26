@@ -2,10 +2,7 @@ import React from "react";
 
 export default function Loading() {
   return (
-    <section className="loading-screen flex flex-col h-screen duration-700 p-6 items-center">
-      <div className="lobby-title flex flex-row justify-center">
-        <p className="loading-screen__text font-normal text-3xl text-gray-600 animate-pulse pt-10 text-center"></p>
-      </div>
+    <section className="loading-screen flex flex-col h-screen duration-700 p-6 items-center ">
       <div className="loading-screen__container flex flex-col h-full justify-center">
         <div className="oading-screen__indicator self-center animate-bounce">
           <svg
