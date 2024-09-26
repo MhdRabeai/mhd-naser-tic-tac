@@ -28,13 +28,13 @@ export default function Game() {
               ...e,
               [indx]: 1,
             }));
-            e.target.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" className="text-white pointer-events-none select-none duration-300 h-full w-full" fill="none" viewBox="0 0 24 24" stroke="#fff">
+            e.target.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" style="animation: fade .8s ease-in-out" className="text-white pointer-events-none select-none duration-300 h-full w-full" fill="none" viewBox="0 0 24 24" stroke="#fff">
               <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M4 20 20 4M4 4 20 20"></path>
             </svg>`;
             setPlayer1(false);
           }
           if (!player1) {
-            e.target.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" className="text-white pointer-events-none select-none duration-300 h-full w-full" fill="none" viewBox="0 0 24 24" stroke="#fff">
+            e.target.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" style="animation: fade .8s ease-in-out" className=" text-white pointer-events-none select-none duration-300 h-full w-full" fill="none" viewBox="0 0 24 24" stroke="#fff">
                 <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="1.8" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728"></path>
               </svg>`;
 
@@ -145,7 +145,11 @@ export default function Game() {
             handleClickDiv={handleClickDiv}
             rePlay={rePlay}
           />
-          <Overlay title={"Game Over"} function={gameOver} class={'bg-[#000000be]'}/>
+          <Overlay
+            title={"Game Over"}
+            function={gameOver}
+            class={"bg-[#000000be]"}
+          />
         </>
       )}
     </>
