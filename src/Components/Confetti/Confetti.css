@@ -23,6 +23,7 @@
   left: 0;
   top: 0;
   background-color: #000000be;
+  min-height: 100%;
 }
 
 @keyframes scaleCup {
